@@ -1,0 +1,170 @@
+.row{
+  &.home.blogs{
+    background-color: $white2;
+    padding: 40px 50px;
+    overflow: auto;
+    .blocks-container-container{
+      width: none;
+      background-color: transparent;
+      max-width: 940px;
+      overflow: auto;
+      margin: 0 auto;
+      .blocks-container{
+        max-width: 460px;
+        &.createblog{
+          float: left;
+          width: 100%;
+          background-color: $white;
+          padding: 31px 28px;
+          font-family: $font_2;
+          .block{
+            &.title{
+              width: 100%;
+              height: min-content;
+              margin-bottom: 10px;
+              p.title{
+                color: $darkgray;
+                font-weight: bold;
+                font-size: 24px;
+                height: min-content;
+              }
+            }
+            &.error,&.succes{
+              width: 100%;
+              background-color: $orange2;
+              color: $white;
+              padding: 8px 4px;
+              margin-bottom: 15px;
+              box-sizing: border-box;
+              font-size: 14px;
+              i{
+                margin-right: 5px;
+              }
+            }
+          }
+          #blog_form{
+            .block{
+              &.input{
+                width: 100%;
+                height: min-content;
+                margin-top: 24px;
+                position: relative;
+                transition: all 0.15s;
+                &:first-child{
+                  margin-top: 0px;
+                }
+                .inputname{
+                  margin: 0px;
+                  line-height: 15px;
+                  font-size: 12px;
+                  color: $gray;
+                  margin-bottom: 8px;
+                }
+                .selectwrapper{
+                  position: relative;
+                  &:after{
+                    content: "\f078";
+                    background-color: #FAFAFA;
+                    color: $gray;
+                    font-family: FontAwesome;
+                    text-align: center;
+                    display: block;
+                    font-size: 12px;
+                    line-height: 16px;
+                    width: 40px;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                  }
+                }
+                .filewrapper{
+                  position: relative;
+                  height: min-content;
+                  input[type="file"]{
+                    padding-left: 60px;
+                    &:hover{
+                      cursor: pointer;
+                    }
+                  }
+                  &:after{
+                    height: 100%;
+                    content: "\f030";
+                    color: #7D7D7D;
+                    background-color: #FAFAFA;
+                    font-family: FontAwesome;
+                    display: block;
+                    font-size: 12px;
+                    line-height: 21px;
+                    padding: 13px 18px;
+                    box-sizing: border-box;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    pointer-events: none;
+                    width: 140px;
+                  }
+                  .fakebutton{
+                    background-color: #7D7D7D;
+                    font-size: 10px;
+                    font-family: $font_2;
+                    line-height: 12px;
+                    color: $white;
+                    position: absolute;
+                    bottom: 12px;
+                    left: 45px;
+                    padding: 6px 12px;
+                    z-index: 99;
+                    border-radius: 18px;
+                    pointer-events: none;
+                    transition: all 0.15s;
+                  }
+                  &:hover{
+                    .fakebutton{
+                      background-color: $orange2;
+                    }
+                  }
+                }
+                input,select,option,textarea{
+                  background-color: #FAFAFA;
+                  border: none;
+                  width: 100%;
+                  font-family: $font_1;
+                  font-size: 12px;
+                  line-height: 15px;
+                  padding: 13px 18px;
+                  box-sizing: border-box;
+                  color: $gray;
+                  position: relative;
+                }
+                textarea{
+                  height: 248px;
+                }
+              }
+              &.button{
+                margin-bottom: 0px;
+                margin-top: 24px;
+              }
+            }
+          }
+        }
+        &.homeblogs{
+          float: right;
+          width: 100%;
+          background-color: $white;
+          padding: 31px 15px;
+          .block{
+            &.blog{
+              &:nth-child(2n+0){
+                margin-right: 0px;
+              }
+            }
+            &.button{
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

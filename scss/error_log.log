@@ -1,0 +1,13 @@
+11/27/20 6:59:11: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 6:59:11: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 6:59:11: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 6:59:13: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 6:59:13: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 6:59:13: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 7:01:13: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 7:01:13: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/27/20 7:01:13: /nas/content/live/challengemel/wp-content/plugins/wp-scss/cache/ - File Permission Error, permission denied. Please make the cache directory writable.
+11/30/20 9:04:27: style.scss - Undefined variable $donkergrijs: line: 2
+11/30/20 9:06:27: style.scss - Undefined variable $white: line: 29
+11/30/20 9:08:27: style.scss - Undefined variable $donkergrijs: line: 2
+12/02/20 9:05:05: style.scss - parse error: failed at `color $white;` /nas/content/live/challengemel/wp-content/themes/blogthema/scss/_home.scss on line 84

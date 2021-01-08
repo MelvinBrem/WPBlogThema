@@ -1,0 +1,165 @@
+.row{
+  &.overzicht{
+    background-color: $white2;
+    padding: 40px 50px;
+  }
+  &.blogs{
+    .blocks-container{
+      width: 100%;
+      background-color: $white;
+      padding: 31px 25px;
+      padding-bottom: 0px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      height: max-content;
+      .block{
+        &.blog{
+          display: block;
+          width: 200px;
+          box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+          float: left;
+          margin-right: 30px;
+          margin-bottom: 30px;
+          transition: all 0.15s;
+          position: relative;
+          &:nth-child(4n+0){
+            margin-right: 0px;
+          }
+          .subblock{
+            &.img{
+              display: block;
+              width: 100%;
+              height: 72px;
+              background-color: $darkgray;
+              background-size: cover;
+              filter: brightness(70%);
+              transition: all 0.15s;
+            }
+            &.imgtext{
+              height: 72px;
+              width: 100%;
+              margin-top: -72px;
+              position: relative;
+              z-index: 99;
+              box-sizing: border-box;
+              p{
+                color: $white;
+                font-family: $font_1;
+                font-size: 8px;
+                letter-spacing: 0;
+                line-height: 10px;
+                position: absolute;
+                margin: 8px 0px;
+                text-shadow: 0px 0px 5px black;
+                &.date{
+                  left: 0pc;
+                  bottom: 0px;
+                  margin-left: 16px;
+                }
+                &.category{
+                  text-align: right;
+                  bottom: 0px;
+                  right: 0px;
+                  max-width: 110px;
+                  margin-right: 16px;
+                }
+              }
+            }
+            &.text{
+              padding: 16px;
+              box-sizing: border-box;
+              p{
+                &.title{
+                  color: $darkgray;
+                  font-family: $font_2;
+                  font-size: 24px;
+                  font-weight: bold;
+                  margin-bottom: 4px;
+                }
+                &.text{
+                  color: #868686;
+                  font-family: $font_2;
+                  font-size: 12px;
+                  height: 100%;
+                  overflow: hidden;
+                }
+              }
+            }
+          }
+          &:hover{
+            .subblock{
+              &.img{
+                filter: brightness(30%);
+              }
+              &.text{
+
+              }
+            }
+          }
+        }
+        &.pagination{
+          width: 100%;
+          text-align: center;
+          margin-bottom: 30px;
+          a, span{
+            font-family: $font_2;
+            font-size: 12px;
+            line-height: 15px;
+            color: $darkgray2;
+            padding: 0px 4px;
+            transition: all 0.1s;
+            &.last,&.previous,&.next,&.first{
+              font-family: FontAwesome;
+              display: inline-block;
+              color: $darkgray2;
+            }
+            &.next:after,&.last:after{
+              margin-left: 6px;
+            }
+            &.previous:after,&.first:after{
+              margin-right: 6px;
+            }
+            &.last:after{
+              content: '\f054 \f054';
+            }
+            &.next:after{
+              content: '\f054';
+            }
+            &.previous:after{
+              content: '\f053';
+            }
+            &.first:after{
+              content: '\f053 \f053';
+            }
+            &:hover{
+              color: $orange;
+              cursor: pointer;
+            }
+            &.current{
+              display: inline-block;
+              height: 32px;
+              width: 32px;
+              background-color: $white2;
+              border-radius: 100%;
+              font-size: 14px;
+              font-weight: bold;
+              box-sizing: border-box;
+              padding: 8px 0px;
+              margin: 0px 4px;
+              cursor: default;
+              &:hover{
+                color: $darkgray2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

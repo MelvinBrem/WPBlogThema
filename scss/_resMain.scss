@@ -1,0 +1,21 @@
+@media (max-width: 1080px) {
+
+  .block{
+    &.button{
+      a,button{
+        font-size: 25px;
+        line-height: 50px;
+        padding: 0px 50px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 400px) {
+
+}

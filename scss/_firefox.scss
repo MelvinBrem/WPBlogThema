@@ -1,0 +1,24 @@
+@-moz-document url-prefix() {
+  .row{
+    &.home.blogs{
+      .blocks-container-container{
+        .blocks-container{
+          &.createblog{
+            #blog_form{
+              .block{
+                &.input{
+                  .filewrapper{
+                    input[type="file"]{
+                      padding-left: 65px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

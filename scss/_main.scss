@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+  font-family: "San Francisco";
+  src: url("../assets/SFNSDisplay-Regular.otf");
+}
+
+/* Variabelen */
+$orange: #E95E30;
+$orange2: #F27623;
+$white: #FFFFFF;
+$white2: #F4F4F4;
+$gray: #404040;
+$darkgray: #262626;
+$darkgray2: #363636;
+$lightgray: #868686;
+
+$font_1: 'San Francisco', sans-serif;
+$font_2: 'Montserrat', sans-serif;
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #333;;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+p{
+  &:first-child{
+    margin-top: 0px;
+  }
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font_2;
+}
+
+.row{
+  padding: 0px 50px;
+}
+
+.blocks-container{
+  max-width: 940px;
+  padding: 0px 42px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+ul.menu{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.block{
+  &.button{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    a,button{
+      border: none;
+      background-color: $orange2;
+      line-height: 31px;
+      padding: 0px 30px;
+      border-radius: 18px;
+      font-family: $font_2;
+      color: $white;
+      font-size: 12px;
+      transition: all 0.15s;
+      margin: 0 auto;
+      height: min-content;
+      width: max-content;
+      display: block;
+      &:hover{
+        cursor: pointer;
+        background-color: $darkgray;
+      }
+    }
+  }
+}
